@@ -1,4 +1,6 @@
 body {
+    margin: 0;
+    padding: 0;
     position: relative;
     justify-content: center;
 }
@@ -15,7 +17,7 @@ body {
 ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
     font-size: 30px;
 }
@@ -24,6 +26,12 @@ li {
     color: white;
     padding: 5px;
 }
+
+li:not(:nth-last-of-type(1)) {
+    border-right: 2px solid white;
+}
+
+
 
 header {
     width: 100%;
@@ -57,11 +65,11 @@ div#right {
     justify-content: space-around;
 }
 
-div#right .imagem{
+div#right figure {
     background-color: rgb(168, 82, 82);
     width: 47%;
     float: left;
-    border: 2px solid rgb(168, 82, 82);
+    border: 5px solid rgb(168, 82, 82);
     margin: 5px;
 }
 
@@ -70,7 +78,7 @@ div#right img {
     height: 200px;
 }
 
-div#right .legenda{
+div#right .legenda {
     text-align: center;
     margin: 0%;
     background-color: rgb(168, 82, 82);
